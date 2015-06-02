@@ -8,7 +8,7 @@ gem 'sprockets-rails', '2.2'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 4.0.3'
-gem 'compass-rails', '~> 2.0'
+gem "compass-rails", github: "Compass/compass-rails", branch: "master"
 
 gem 'foundation-rails'
 gem 'haml-rails'

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'site/index'
+
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :users
   resources :posts do
@@ -9,7 +11,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'posts#index'
+  root 'site#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
